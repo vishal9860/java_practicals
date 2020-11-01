@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        .one
+        {
+        }
+    #one
+    {
+        border:10px solid red;
+        height: 200px;/*200+10+10+10+10=240
+        margin:2px;
+        background-color:yellow;/*400+10+10+10+10=440 box=440*240 so avoid this big size we use box-sizing border */
+        width: 400px;/*400+10+10+10+10=440*/
+        padding: 10px;
+        box-sizing: border-box;
+        justify-content:space-between;
+        align-items: center;
+    } 
+    #two
+    {   margin:2px;
+        background-color:gold;
+        border:10px solid red;
+        height: 200px;
+        float:right;
+        width: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+    <div id="one">
+
+    </div>
+    <div id="two">
+        
+    </div>
+</div>
+
+</body>
+</html>

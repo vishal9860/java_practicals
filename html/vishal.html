@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--<script src="script.js"></script>
+    <script src="tut4.js"></script>
+     <script src="tut5.js"></script>-->
+     <!--<script src="tut6.js"></script>-->
+     <!--<script src="tut7.js"></script>-->
+     <!--<script src="tut8.js"></script>-->
+     <!--<script src="tut9.js"></script>-->
+     <!--<script src="tut10.js"></script>-->
+     <!--<script src="tut11.js"></script>-->
+     <!--<script src="tut14.js"></script>-->
+	<script src="tut15.js"></script>
+	<script src="tut20.js"></script>
+	</head>
+	<body>
+	    <div class="container">
+	    <h1 id="heading">Welcome to code with harry</h1>
+	    <div id=-"myfirst" class="child red good" >child1
+	<ul class="this">
+	<li class="child" id="v">vishal</li>
+	<li class="child">Sushant</li>
+	<li class="child">Chandrakant</li>
+	<li class="child">Saurabh</li>
+	<li class="child" id="k">Kiran</li>
+	</ul>
+	</div>
+	    <form action="vishal.html" method="POST">
+	    <label for="name">Enter the name</label>
+		<input type="text" name="name" id="name" placeholder="name here"><br>
+		<label for="lst-name">Enter the  last name</label><br>
+		<input type="text" name="name" id="lst-name" placeholder="last-name here">
+		<input type="button" value="submit"> 
+	    </form>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <script>
+		    /*tutorial 15* childeren parent traversing
+            console.log("wel come to tutorials 15");
+            let cont=document.querySelector('.no');
+		  cont=document.querySelector('.container');
+		  let nodetype=cont.childNodes[1].nodeType;
+		   console.log(cont.childNodes[0].nodeName);
+		   console.log(nodetype);
+		   let container=document.querySelector('div.container');
+		   console.log(container.firstChild.parentNode);
+		   console.log(container.firstElementChild.nextElementSibling);
+		   console.log(container.firstElementChild.nextElementSibling.nextElementSibling);
+		   console.log(container.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling);
+             console.log(container.
+		   console.log(container.childElementCount);/* count the child element of container class
+		   console.log(container.children[1].children);
+		   console.log(container.children[1].children.children);*/
+		   /*tutorial 16*/
+		    /*console.log("tutorial 16 appending dom in html");
+		
+		   let element=document.createElement('li');
+		   let text =document.createTextNode(" i am vishal jare");
+	        element.appendChild(text)
+		   /*add a class name using to li element*/
+		   /*
+		   element.className='child';
+		   element.id='li';
+		   element.setAttribute('title','mytitle');
+		   console.log(element);
+		   let ul=document.querySelector('ul.this');
+		   ul.appendChild(element);
+
+
+
+		   let elements=document.createElement('h3');
+		   let tet=document.createTextNode('hello thist');
+		   elements.className='class';
+		   elements.id='cl';
+		   elements.setAttribute('title','new title');
+		   elements.appendChild(tet);
+		   element.replaceWith(elements);
+
+		   let head=document.createElement('h3');
+		   let texts=document.createTextNode("this is heading");
+		   head.id='head';
+		   head.className='heading';
+		   head.appendChild(texts);
+		   head.setAttribute('title','heading');
+		   console.log(head);
+		   let body=document.querySelector('div.container');
+		   body.appendChild(head);*/
+		   /*
+		 
+		   console.log("this is tutorial 17 on Events");
+document.getElementById("v").addEventListener('click',function(e){
+  console.log("you have click the heading");
+  location.href=''
+  console.log(e);
+  });*/
+
+
+  /* tutorial 20*/
+  console.log("this is 20")
+  // set localstorage
+localStorage.setItem('name','vishal');
+localStorage.setItem('name2','kiran');
+// clear the local storage localStorage.clear();
+//retrive the locakl storage
+let v=localStorage.getItem('name');
+console.log(v);
+//remove particular key value pair
+localStorage.removeItem('name');
+let imparray=['bhendi','gawar','adarak'];
+localStorage.setItem('sabzi',JSON.stringify(imparray));
+let object=JSON.parse(localStorage.getItem('sabzi'));
+console.log(object);
+
+
+
+sessionStorage.setItem('session_name','session1');
+sessionStorage.setItem('session_name2','session2');
+
+	</script>
+	    </body>
+	</html>
+</body>
+</html>

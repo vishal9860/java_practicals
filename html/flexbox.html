@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>flex box and flex box properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*
+       section{
+           width:100%;
+           background:cyan;
+           display:flex;
+          /* flex-direction: row-reverse;*/
+        /*justify-content:end;*/
+        /* justify-content:space-around;/* horizontaly work* left or right ko karana hai to */
+        /*align-items:center;/*verticaly work justify-contrnt and align-items work are same but direction are different
+           top bottom karana hai to
+           /*
+           flex-direction: it is used for row and column direction for boxses;
+           flex-grow: used for large size box; badana 
+           flex-shrink:uesd for small size box;     ghatana*/
+        section div {
+            /* width:30%;*/
+            flex-basis: 30%;
+            padding: 10px;
+            border: 2px solid green;
+
+        }
+
+        .flex1 {
+            /*flex:1;*/
+            background: red;
+            flex-shrink: initial;
+        }
+
+        .flex2 {
+            /* flex:1;*/
+            background: yellow;
+        }
+
+        .flex3 {
+            /*flex:1;*/
+            background: green;
+        }
+
+        .flex4 {
+            /*flex:1;*/
+            background: pink;
+        }
+
+        .flecx5 {
+            background: palegreen;
+        }
+        .flecx6{
+            background:papayawhip; 
+        }
+        @media(min-width: 600px) {
+            section {
+
+                display: flex;
+                justify-content: space-around;
+                flex-flow: wrap;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="flex1"> 1 one Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odit ratione similique laudantium impedit tempore voluptatem animi consequatur fugiat,
+            mollitia eius! At maxime blanditiis magni doloribus facilis iure. Cupiditate, optio quibusdam?</div>
+        <div class="flex2"> 2 two Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, optio quibusdam?</div>
+        <div clas="flex3"> 3 three Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odit ratione similique laudantium impedit tempore voluptatem animi consequatur fugiat,
+            mollitia eius! At maxime blanditiis magni doloribus facilis iure. Cupiditate, optio quibusdam?</div>
+        <div class="flex4">4 four Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odit ratione similique laudantium impedit tempore voluptatem animi consequatur fugiat,
+            mollitia eius! At maxime blanditiis magni doloribus facilis iure. Cupiditate, optio quibusdam?</div>
+        <div class="flex5">5 four Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odit ratione similique laudantium impedit tempore voluptatem animi consequatur fugiat,
+            mollitia eius! At maxime blanditiis magni doloribus facilis iure. Cupiditate, optio quibusdam?</div>
+        <div class="flex6">6 four Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Odit ratione similique laudantium impedit tempore voluptatem animi consequatur fugiat,
+            mollitia eius! At maxime blanditiis magni doloribus facilis iure. Cupiditate, optio quibusdam?</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</body>
+
+</html>

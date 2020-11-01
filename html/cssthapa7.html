@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-pseudo element</title>
+    <style>
+        p.first-child::first-letter {
+            color: yellow;
+            font-size: 8rem;
+            float: left;
+            display: block;
+            margin: 0 15px 0 0;
+            line-height: 0.5;
+            font-weight: bold;
+        }
+        *{
+            background:blue;
+        }
+        p.first-child::first-line
+        {
+            color:yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="first-child">
+        vishal jare Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi animi accusantium,
+        quas ea maiores omnis sint quae illum quidem saepe cupiditate suscipit,
+        voluptas assumenda. Beatae labore optio adipisci aliquam iusto.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat minus repellendus ullam,
+        at rem expedita rerum.
+        Mollitia quam dolore eveniet, qui impedit dolorem minus maiores ipsa suscipit veritatis numquam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+        obcaecati dolor! Vero non commodi consequatur facere nam,
+        ut id veritatis fugit odio similique ipsum, nihil impedit corporis facilisa incidunt.</p>
+</body>
+</html>

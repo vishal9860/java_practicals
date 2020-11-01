@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+	    <h1 id="heading">Welcome to code with harry</h1>
+	    <div id="myfirst" class="child red good" id="first">child1
+	<ul class="this" id="myul">
+	<li class="child" id="v">vishal</li>
+	<li class="child">Sushant</li>
+	<li class="child">Chandrakant</li>
+	<li class="child">Saurabh</li>
+	<li class="child" id="k">Kiran</li>
+	</ul>
+	</div>
+	    <form action="vishal.html" method="POST">
+	    <label for="name">Enter the name</label>
+		<input type="text" name="name" id="name" placeholder="name here"><br>
+		<label for="lst-name">Enter the  last name</label><br>
+		<input type="text" name="name" id="lst-name" placeholder="last-name here">
+		<input type="button" value="submit"> 
+	    </form>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <div class="no">this is dummy div</div>
+	    <script>
+            //create new element by usin
+            let= divEle=document.createElement('div');
+
+            // add text to created element
+            let text=document.createTextNode("this element is editable click to edit it");
+            divEle.appendChild(text);
+            let container=document.querySelector('.container');
+            let first=document.getElementById('myfirst');
+            console.log(divEle,container,first);
+
+            //set id to particular element
+            divEle.setAttribute('id','ele');
+            divEle.setAttribute('class','ele');
+
+            //set style by particular element 
+            divEle.setAttribute('style','border: 5px solid green;border-radius:10px; width:150px;padding:30px;margin:30px');
+            container.insertBefore(divEle,first);
+
+            // add eventlisner to Div Elemnt
+            divEle.addEventlistener('click',function()
+            {
+                let html=ele.innerHTML;
+                divEle.innerHTML =`<textarea  id=textarea" class="textarea"rows="3">${html}</textarea>`;
+            })
+
+        </script>
+</body>
+</html>
